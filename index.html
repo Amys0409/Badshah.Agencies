@@ -9,77 +9,88 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #10222E; /* Background Color */
+            background-color: #E19033; /* Background Color */
             text-align: center;
             color: #fff; /* Text Color for readability */
             position: relative;
             min-height: 100vh;
         }
         .container {
-            padding: 50px;
+            padding: 0px;
         }
-        h1 {
+.cover {
+            position: relative;
+            background: url('https://i.imgur.com/l6DawYJ.jpeg') no-repeat center center; 
+            width: 100%; /* Added padding to fit within the white border */
+            height: 45vh; 
+            background-size: cover;
             color: #fff;
+            margin: 0 auto; /* Center the image */
+            border: 3px solid #fff; /* White frame around the cover */
+            border-radius: 5px; /* Optional rounded corners */
+             
         }
-        .contact-image {
-            margin: 20px auto;
-            width: 150px; /* Circle size */
+        .profile-image {
+            position: absolute;
+            top: 110%; /* Adjusted value to move it slightly down */
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 150px;
             height: 150px;
-            border-radius: 50%; /* Make it circular */
-            background-image: url('https://i.imgur.com/pYnSHEZ.jpeg'); /* Image URL */
-            background-size: cover; /* Ensure the image fits properly */
-            background-position: center; /* Center the image */
-            border: 4px solid #0078D4; /* Optional: border around the circle */
+            border-radius: 50%;
+            border: 5px solid #fff;
+            background: url('https://i.imgur.com/pYnSHEZ.jpeg') no-repeat center center;
+            background-size: cover;
         }
-        .contact-options {
-            margin-top: 30px;
+         .contact-options {
+            margin-top: 50px;
         }
         .contact-options a {
             display: inline-block;
             margin: 10px;
-            padding: 15px 25px;
             text-decoration: none;
             color: #fff;
-            background-color: #0078D4;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        .contact-options a.instagram {
-            background-color: #E1306C;
-        }
-        .contact-options a.instagram:hover {
-            background-color: #C13584;
-        }
-        .contact-options a:hover {
-            background-color: #005fa3;
-        }
-        .bottom-image {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
             text-align: center;
-            padding: 10px;
-            background-color:#FEFEFE ;
         }
-        .bottom-image img {
-            width: 150px; /* Adjust the image size */
+        .contact-options img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 5px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Contact Badshah Agencies</h1>
-        <div class="contact-image"></div> <!-- Circular Image -->
-        <p>Select a contact option below:</p>
+        <div class="cover">
+            <div class="profile-image"></div>
+        </div>
+ 
+       <p style="margin-top: 120px;">Select a contact option below:</p>
         <div class="contact-options">
-            <a href="mailto:badshah.agencies.indore@gmail.com">Email Us</a>
-            <a href="tel:+916264611551">Call Us</a>
-            <a href="https://api.whatsapp.com/send/?phone=%2B916264611551&text&type=phone_number&app_absent=0" target="_blank">WhatsApp Us</a>
-            <a href="https://www.instagram.com/badshah.agencies/" target="_blank" class="instagram">Follow Us on Instagram</a>
+            <a href="mailto:Badshah.Agencies.indore@gmail.com">
+                <img src="https://img.icons8.com/ios/50/000000/gmail.png" alt="Gmail Logo">
+                <div>Email</div>
+            </a>
+            <a href="tel:+916264611551">
+                <img src="https://img.icons8.com/ios/50/000000/phone.png" alt="Call Logo">
+                <div>Call</div>
+            </a>
+            <a href="https://wa.me/916264611551" target="_blank">
+                <img src="https://img.icons8.com/ios/50/000000/whatsapp.png" alt="WhatsApp Logo">
+                <div>WhatsApp</div>
+            </a>
+            <a href="https://www.instagram.com/badshah.agencies/" target="_blank">
+                <img src="https://img.icons8.com/ios/50/000000/instagram-new.png" alt="Instagram Logo">
+                <div>Instagram</div>
+            </a>
+            
+            </a>
         </div>
     </div>
-    <div class="bottom-image">
-        <img src="https://i.imgur.com/q6Xsl6f.jpeg" alt="Badshah Agencies Logo">
-    </div>
+    
+  <footer style="text-align: center; margin-top: 50px;">
+        <img src="https://i.imgur.com/nVsWwsj.jpeg" alt="Footer Image" style="width: 150px; height: auto; border-radius: 10px;">
+    </footer>
+  
 </body>
 </html>
